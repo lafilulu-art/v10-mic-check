@@ -1,0 +1,10 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src 'none'; media-src 'none'; frame-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'"><meta name="referrer" content="no-referrer"><meta name="viewport" content="width=device-width,initial-scale=1"><title>V10 最小麦克风权限测试 · v2</title><link rel="stylesheet" href="./lab.css"></head><body><main>
+<h1>原机麦克风 · 本地音量测试 v3</h1>
+<p>只验证浏览器是否能取得音频流。只在本机内存测量音量，不录制文件、不播放声音、不上传、不请求 AI。音量变化不能独立证明是人声。</p>
+<p id="status" role="status">HTML 已加载，等待本页脚本；若一直停在这里，请停止测试并截图。</p>
+<button type="button" id="start">测试麦克风（申请音频流）</button>
+<button type="button" id="stop" disabled>立即停止 / 取消等待</button>
+<p>取得音频流后最多保持 5 秒，随后立即停止所有音轨。按钮不会跳转或刷新。若出现拦截页面，请保留地址栏、完整错误与 Ray ID，不要反复点击。</p>
+<label>实际输入音量 <meter id="level" min="0" max="1" value="0"></meter></label><p id="level-text">尚未采样</p><h2>本地诊断报告</h2><textarea id="report" rows="22" readonly aria-label="本地诊断报告"></textarea>
+<p>报告只显示在本页；不会自动上传。页面无法读取自身文档的 HTTP 状态或 Cloudflare Ray ID，这两项需从错误页面或站点日志取得。</p>
+</main><script src="./lab.js"></script></body></html>
